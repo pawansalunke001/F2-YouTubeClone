@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/subscribePage.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="./img/navigation/hamburger_icon.svg" alt="" class="menu-icon">
+            <img src="./img/yt-button.png" alt="" class="logo">
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search" id="searchInput">
+                
+            </div>
+            <span id="imgSearch"><img src="./img/navigation/search_icon.svg" alt="" id="searchIcon"></span>
+            <img src="./img/navigation/mike_icon.svg" alt="" class="mic-icon">
+        </div>
+        <div class="nav-right flex-div">
+            <img src="./img/navigation/create_icon.svg" alt="">
+            <img src="./img/navigation/apps_icon.svg" alt="">
+            <img src="./img/navigation/notification_icon.svg" alt="">
+            <img src="./img/navigation/profile.png" alt="" class="user-icon">
+        </div>
+    </nav>
+
+    <!--------------- sidebar--------------- -->
+    <div class="main container-fluid">
+        <div class="row">
+            <div class="left-main col-lg-2 col-md-2 side-bar">
+                <div class="shortcut-link">
+                    <a href=""><img src="./img/sidebar-fill/home.svg" alt="">
+                        <p>Home</p>
+                    </a>
+                    <a href=""><img src="./img/sidebar-fill/explore.svg" alt="">
+                        <p>Explore</p>
+                    </a>
+                    <a href=""><img src="./img/sidebar-fill/subscription.svg" alt="">
+                        <p>Subscription</p>
+                    </a>
+                    <hr>
+                    <a href=""><img src="./img/sidebar-fill/library.svg" alt="">
+                        <p>Library</p>
+                    </a>
+                    <a href=""><img src="./img/sidebar-fill/history.svg" alt="">
+                        <p>History</p>
+                    </a>
+                    <a href=""><img src="./img/sidebar/your_video_icon.svg" alt="">
+                        <p>Your Video</p>
+                    </a>
+                    <a href=""><img src="./img/sidebar/watch_later_icon.svg" alt="">
+                        <p>Watch Later</p>
+                    </a>
+                    <a href=""><img src="./img/sidebar/liked_icon.svg" alt="">
+                        <p>Liked Video</p>
+                    </a>
+                    <a href=""><img src="./img/sidebar/arrow_bottom_icon.svg" alt="">
+                        <p>Show More</p>
+                    </a>
+                    <hr>
+                </div>
+                <div class="subscribed-list">
+                    <h3>SUBSCRIPTIONS</h3>
+                    <a href="C:\Users\Admin\Desktop\Frontend projects\FRONTEND-2\F2-YouTubeClone\subscriberPage.html" class="subscribe"><img src="./img/sidebar-fill/james.png" alt="">
+                        <p>James Gouse</p>
+                    </a>
+                    <a href="" class="subscribe"><img src="./img/sidebar-fill/alan.png" alt="">
+                        <p>Alan Cooper</p>
+                    </a>
+                    <a href="" class="subscribe"><img src="./img/sidebar-fill/marcus.png" alt="">
+                        <p>Marcus Levin</p>
+                    </a>
+                    <a href="" class="subscribe"><img src="./img/sidebar-fill/alexis.png" alt="">
+                        <p>Alexis Sears</p>
+                    </a>
+                    <a href="" class="subscribe"><img src="./img/sidebar-fill/jesica.png" alt="">
+                        <p>Jesica Lambert</p>
+                    </a>
+                    <a href="" class="subscribe"><img src="./img/sidebar-fill/anna.png" alt="">
+                        <p>Anna White</p>
+                    </a>
+                    <a href="" class="subscribe"><img src="./img/sidebar-fill/skylar.png" alt="">
+                        <p>Skylar Dias</p>
+                    </a>
+                    <a href="" class="subscribe"><img src="./img/sidebar/arrow_bottom_icon.svg" alt="">
+                        <p>Show 13 more</p>
+                    </a>
+                    <hr>
+                </div>
+                <div class="MoreYoutube">
+                    <h3>MORE FROM YOUTUBE</h3>
+                    <a href=""><img src="./img/sidebar-fill/premium.svg" alt="">
+                        <p>Youtube Premium</p>
+                    </a>
+                    <a href=""><img src="./img/sidebar-fill/gaming.svg" alt="">
+                        <p>Gaming</p>
+                    </a>
+                    <a href=""><img src="./img/sidebar-fill/live.svg" alt="">
+                        <p>Live</p>
+                    </a>
+                    <a href=""><img src="./img/sidebar-fill/sports.svg" alt="">
+                        <p>Sport</p>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <!----------------------- main ----------------------->
+            <div class="right-main col-lg-10 col-md-10 col-xs-12">  
+                <div class="row" id="poster">
+                    <img src="./img/subscriber/subscriber_back.png" />
+                </div>
+                <div class="row" id="channel_info">
+                    <div class="col-6 d-flex justify-content-start">
+                        <img src="./img/sidebar-fill/alan.png" alt="">
+                        <div><h5>Marcus Levin</h5>
+                        <h6>1.2M subscribers</h6></div>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-danger">subscribe</button>
+                    </div>
+                </div>
+                <div class="row" id="subscriber-nav">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container-fluid">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">VIDEOS</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">PLAYLISTS</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">COMMUNITY</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">CHANNELS</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT</a>
+                              </li>
+                              <li class="nav-item">
+                                <input type="search" class="search" />
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+
+                <div class="row" id="home-video-container">
+                    <div class="col-lg-6">
+                        <iframe class="videoFrame" width="89%" height="400px" id="videoFrame" src="https://www.youtube.com/embed/ef6yTBZrvxE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-lg-6">
+                        <div>Blind Woodturner: Turning passion into fine art</div>
+                        <div>576,969 views . 3 weeks ago</div>
+                        <div>Chris Fisher, also known as the Blind Woodturner, learned his craft by listening to hundreds of hours of YouTube videos and experimenting in his workshop. 
+                            Now he’s a YouTube creator himself, sells his products worldwide, and does demonstrations all around the country.</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row d-flex justify-content-start">
+                    <div class="col-lg-3 col-md-6 col-xs-6"><h5>Search On ‘21</h5></div>
+                    <div class="col-lg-1 col-md-1 col-xs-1 text-end"><img src="./img/sidebar/play.svg" id="play_icon" /></div>
+                    <div class="col-lg-3 col-md-2 col-xs-2"><h5>PLAY ALL</h5></div>
+                </div>
+                <div class="row" id="home-video-list"> </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/subscribePage.js"></script>
+</body>
+
+</html>
