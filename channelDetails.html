@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="channel-details.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <img id="toggle-panel" src="Images/hamburger.png       " alt="" />
+        <img src="Images/Logo.png" alt="" class="logo" />
+      </div>
+      <div class="center">
+        <div class="search-box">
+          <input
+            type="text"
+            class="search-bar"
+            placeholder="Search"
+            id="search-input"
+          />
+          <button class="search-button" id="search-button">
+            <span class="material-symbols-outlined"> search </span>
+          </button>
+        </div>
+        <button class="voice-search">
+          <span class="material-symbols-outlined mic"> mic </span>
+        </button>
+      </div>
+      <div class="right">
+        <img src="Images/upload.png" alt="" class="upload-button" />
+        <img src="Images/apps.png" alt="" class="more-apps" />
+        <img
+          src="Images/notifications.png"
+          alt=""
+          class="notification-button"
+        />
+        <img src="Images/Profile-pic.png" alt="" class="profile-photo" />
+      </div>
+    </header>
+        <div class="main-container">
+      <div class="left-panel">
+        <div class="scrollable-content">
+          <div class="top">
+          <span><img src="Images/Home.png" alt="" /></span>
+          <span><img src="Images/explore.png" alt="" /></span>
+          <span><img src="Images/subscription.png" alt="" /></span>
+        </div>
+        <hr />
+        <div class="mid">
+          <span><img src="Images/library.png" alt="" /></span>
+          <span><img src="Images/History.png" alt="" /></span>
+          <span><img src="Images/Your videos.png" alt="" /></span>
+          <span><img src="Images/Watch-Later.png" alt="" /></span>
+          <span><img src="Images/Liked Videos.png" alt="" /></span>
+          <span><img src="Images/Show More.png" alt="" /></span>
+        </div>
+        <div class="last" id="last"></div>
+      </div>
+        </div>
+      <main class="main">
+        
+        <div class="channel-banner" id="channel-banner"></div>
+        <div class="channel-details-container">
+          <div class="channel-details-and-subscription"></div>
+          <div class="panels">
+            <button>HOME</button>
+            <button>VIDEOS</button>
+            <button>PLAYLISTS</button>
+            <button>COMMUNITY</button>
+            <button>CHANNELS</button>
+            <button>ABOUT</button>
+            <button class="material-symbols-outlined">search</button>
+          </div>
+        </div>
+        <div class="channel-content">
+          <div class="main-video" id="main-video">
+            <div class="landingVideo" id="landingVideo"></div>
+            <div class="video-name-and-description">
+              <p class="video-title" id="video-title"></p>
+              <p class="views-and-upload-date" id="views-and-upload-date"></p>
+              <p class="description" id="description"></p>
+            </div>
+          </div>
+
+          <div class="playlist">
+            <div class="playlist-name">
+              <b id="playlist"></b>
+            </div>
+            <div class="cards-container" id="user-channel-video-card"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="channel-details.js"></script>
+  </body>
+</html>

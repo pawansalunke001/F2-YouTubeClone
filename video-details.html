@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="video-details.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <img id="toggle-panel" src="Images/hamburger.png       " alt="" />
+        <img src="Images/Logo.png" alt="" class="logo" />
+      </div>
+      <div class="center">
+        <div class="search-box">
+          <input
+            type="text"
+            class="search-bar"
+            placeholder="Search"
+            id="search-input"
+          />
+          <button class="search-button" id="search-button">
+            <span class="material-symbols-outlined"> search </span>
+          </button>
+        </div>
+        <button class="voice-search">
+          <span class="material-symbols-outlined mic"> mic </span>
+        </button>
+      </div>
+      <div class="right">
+        <img src="Images/upload.png" alt="" class="upload-button" />
+        <img src="Images/apps.png" alt="" class="more-apps" />
+        <img
+          src="Images/notifications.png"
+          alt=""
+          class="notification-button"
+        />
+        <img src="Images/Profile-pic.png" alt="" class="profile-photo" />
+      </div>
+    </header>
+
+    <div class="main-container">
+      <div class="left-panel">
+        <div class="scrollable-content">
+          <div class="top">
+          <span><img src="Images/Home.png" alt="" /></span>
+          <span><img src="Images/explore.png" alt="" /></span>
+          <span><img src="Images/subscription.png" alt="" /></span>
+        </div>
+        <hr />
+        <div class="mid">
+          <span><img src="Images/library.png" alt="" /></span>
+          <span><img src="Images/History.png" alt="" /></span>
+          <span><img src="Images/Your videos.png" alt="" /></span>
+          <span><img src="Images/Watch-Later.png" alt="" /></span>
+          <span><img src="Images/Liked Videos.png" alt="" /></span>
+          <span><img src="Images/Show More.png" alt="" /></span>
+        </div>
+        <div class="last" id="last"></div>
+      </div>
+        </div>
+        
+      <div class="hero-section main">
+        <main id="video-info">
+          <div id="video-placeholder"></div>
+          <div class="video-details" id="video-details"></div>
+          <div class="channel-status" id="channel-status"></div>
+          <div class="description-container" id="description-container"></div>
+          <div class="comment-header" id="comment-header"></div>
+          <div class="comment-input" id="comment-input"></div>
+          <section class="comments-container" id="comments-container"></section>
+
+          <section>
+            <div class="like-dislike-reply">
+              <span class="like-button">
+                <img src="Images/like-button.png" alt="" />
+              </span>
+              <span class="dislike-button">
+                <img src="Images/dislike-button.png" alt="" />
+              </span>
+              <span class="reply-button">
+                <img src="Images/Reply.png" alt="" />
+              </span>
+            </div>
+          </section>
+        </main>
+        <aside class="aside">
+          <section class="interests-video-details">
+            <span class="suggestions" id="all"> All </span>
+            <span class="suggestions" id="from-channel"></span>
+          </section>
+          <section class="video-suggestions" id="video-suggestions"></section>
+        </aside>
+      </div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./video-details.js"></script>
+  </body>
+</html>

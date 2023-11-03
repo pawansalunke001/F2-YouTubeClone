@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.channel-details-and-subscription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.channel-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.channel-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.panels
+{
+    display: flex;
+}
+.panels button{
+    padding:20px 30px;
+    background: transparent;
+    color: white;
+    border: none;
+}
+.panels button:hover{
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+}
+.channel-banner{
+    margin-bottom: 0px;
+}
+.channel-banner img{
+    margin: 0;
+    width: 100%;
+    height: 300px;
+}
+.subscribe{
+    background-color: red;
+    color: white;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+.subscribe:hover{
+    cursor: pointer;
+}
+.channel-owner-details{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.channel-details-container{
+    width: 85vw;
+    margin: 30px 0;
+    margin-inline: auto;
+}
+.upload-details{
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  color: var(--light-grey);
+}
+.cards-container{
+    margin-inline: auto;
+    margin-top: 10px;
+}
+.channel-content{
+    width: 85vw;
+    margin-inline: auto;
+}
+.main-video{
+    display:flex;
+    gap: 20px;
+
+}
+.video-title,.views-and-upload-date,.description{
+    margin-top: 25px;
+}
+.landingVideo{
+    border-radius: 30px;
+    border: none;
+}
+.playlist{
+    margin-top: 20px;
+}

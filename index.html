@@ -1,131 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-</head>
-
-<body>
-
-    <nav class="flex-div">
-        <div class="nav-left flex-div">
-            <img src="./img/navigation/hamburger_icon.svg" alt="" class="menu-icon">
-            <img src="./img/yt-button.png" alt="" class="logo">
-        </div>
-        <div class="nav-middle flex-div">
-            <div class="search-box flex-div">
-                <input type="text" placeholder="Search" id="searchInput">
-                
-            </div>
-            <span id="imgSearch"><img src="./img/navigation/search_icon.svg" alt="" id="searchIcon"></span>
-            <img src="./img/navigation/mike_icon.svg" alt="" class="mic-icon">
-        </div>
-        <div class="nav-right flex-div">
-            <img src="./img/navigation/create_icon.svg" alt="">
-            <img src="./img/navigation/apps_icon.svg" alt="">
-            <img src="./img/navigation/notification_icon.svg" alt="">
-            <img src="./img/navigation/profile.png" alt="" class="user-icon">
-        </div>
-    </nav>
-
-    <!--------------- sidebar--------------- -->
-    <div class="main container-fluid">
-        <div class="row">
-            <div class="left-main col-lg-2 col-md-2 side-bar">
-                <div class="shortcut-link">
-                    <a href=""><img src="./img/sidebar-fill/home.svg" alt="">
-                        <p>Home</p>
-                    </a>
-                    <a href=""><img src="./img/sidebar-fill/explore.svg" alt="">
-                        <p>Explore</p>
-                    </a>
-                    <a href=""><img src="./img/sidebar-fill/subscription.svg" alt="">
-                        <p>Subscription</p>
-                    </a>
-                    <hr>
-                    <a href=""><img src="./img/sidebar-fill/library.svg" alt="">
-                        <p>Library</p>
-                    </a>
-                    <a href=""><img src="./img/sidebar-fill/history.svg" alt="">
-                        <p>History</p>
-                    </a>
-                    <a href=""><img src="./img/sidebar/your_video_icon.svg" alt="">
-                        <p>Your Video</p>
-                    </a>
-                    <a href=""><img src="./img/sidebar/watch_later_icon.svg" alt="">
-                        <p>Watch Later</p>
-                    </a>
-                    <a href=""><img src="./img/sidebar/liked_icon.svg" alt="">
-                        <p>Liked Video</p>
-                    </a>
-                    <a href=""><img src="./img/sidebar/arrow_bottom_icon.svg" alt="">
-                        <p>Show More</p>
-                    </a>
-                    <hr>
-                </div>
-                <div class="subscribed-list">
-                    <h3>SUBSCRIPTIONS</h3>
-                    <a href="https://pawansalunke001.github.io/F2-YouTubeClone/subscriberPage.html" class="subscribe"><img src="./img/sidebar-fill/james.png" alt="">
-                        <p>James Gouse</p>
-                    </a>
-                    <a href="" class="subscribe"><img src="./img/sidebar-fill/alan.png" alt="">
-                        <p>Alan Cooper</p>
-                    </a>
-                    <a href="" class="subscribe"><img src="./img/sidebar-fill/marcus.png" alt="">
-                        <p>Marcus Levin</p>
-                    </a>
-                    <a href="" class="subscribe"><img src="./img/sidebar-fill/alexis.png" alt="">
-                        <p>Alexis Sears</p>
-                    </a>
-                    <a href="" class="subscribe"><img src="./img/sidebar-fill/jesica.png" alt="">
-                        <p>Jesica Lambert</p>
-                    </a>
-                    <a href="" class="subscribe"><img src="./img/sidebar-fill/anna.png" alt="">
-                        <p>Anna White</p>
-                    </a>
-                    <a href="" class="subscribe"><img src="./img/sidebar-fill/skylar.png" alt="">
-                        <p>Skylar Dias</p>
-                    </a>
-                    <a href="" class="subscribe"><img src="./img/sidebar/arrow_bottom_icon.svg" alt="">
-                        <p>Show 13 more</p>
-                    </a>
-                    <hr>
-                </div>
-                <div class="MoreYoutube">
-                    <h3>MORE FROM YOUTUBE</h3>
-                    <a href=""><img src="./img/sidebar-fill/premium.svg" alt="">
-                        <p>Youtube Premium</p>
-                    </a>
-                    <a href=""><img src="./img/sidebar-fill/gaming.svg" alt="">
-                        <p>Gaming</p>
-                    </a>
-                    <a href=""><img src="./img/sidebar-fill/live.svg" alt="">
-                        <p>Live</p>
-                    </a>
-                    <a href=""><img src="./img/sidebar-fill/sports.svg" alt="">
-                        <p>Sport</p>
-                    </a>
-                    
-                </div>
-            </div>
-
-            <!----------------------- main ----------------------->
-            <div class="right-main col-lg-10 col-md-10 col-xs-12">  
-                <div class="filter-options row" id="filter"></div>
-                <div class="videos-container row" id="container"></div>
-            </div>
-        </div>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <div id="custom-progress-bar">
+      <div id="progress"></div>
     </div>
-    
-    <script src="./js/script.js"></script>
-</body>
+      <header class="header">
+        <div class="left">
+          <img id="toggle-panel" src="Images/hamburger.png       " alt="" />
+          <img src="Images/Logo.png" alt="" class="logo" />
+        </div>
+        <div class="center">
+          <div class="search-box">
+            <input
+              type="text"
+              class="search-bar"
+              placeholder="Search"
+              id="search-input"
+            />
+            
+            <button class="search-button" id="search-button">
+              <span class="material-symbols-outlined"> search </span>
+            </button>
+          </div>
+          <button class="voice-search">
+            <span class="material-symbols-outlined mic"> mic </span>
+          </button>
+        </div>
+        
+        <div class="right">
+          <img src="Images/upload.png" alt="" class="upload-button" />
+          <img src="Images/apps.png" alt="" class="more-apps" />
+          <img
+            src="Images/notifications.png"
+            alt=""
+            class="notification-button"
+          />
+          <img src="Images/Profile-pic.png" alt="" class="profile-photo" />
+        </div>
+        <ul class="dropdown-menu">
+        </ul>
 
+      </header>
+
+    <div class="whole-body-container">
+      
+          
+      <div class="main-container">
+        <div class="left-panel">
+          <div class="scrollable-content">
+            <div class="top">
+              <span><img src="Images/Home.png" alt="" /></span>
+              <span><img src="Images/explore.png" alt="" /></span>
+              <span><img src="Images/subscription.png" alt="" /></span>
+            </div>
+            <hr />
+            <div class="mid">
+              <span><img src="Images/library.png" alt="" /></span>
+              <span><img src="Images/History.png" alt="" /></span>
+              <span><img src="Images/Your videos.png" alt="" /></span>
+              <span><img src="Images/Watch-Later.png" alt="" /></span>
+              <span><img src="Images/Liked Videos.png" alt="" /></span>
+              <span><img src="Images/Show More.png" alt="" /></span>
+            </div>
+            <div class="last" id="last">
+              <span class="subscriptionStatus"></span>
+            </div>
+          </div>
+        </div>
+        <main class="main">
+          <section class="interests">
+            <button class="left-button"><span class="material-symbols-outlined">
+chevron_left
+</span></button>
+            <div class="scrollable-chips">
+                <span class="suggestions">All</span>
+            </div>
+            <button class="right-button right"><span class="material-symbols-outlined">
+chevron_right
+</span></button>
+            </div>
+          </section>
+
+          <section class="cards-container" id="cards-container"></section>
+        </main>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
